@@ -50,7 +50,7 @@ namespace SpaceFlight
             pause = false;
             gameIsOver = false;
             score = 0;
-            level = 1;
+            level = 0;
             difficulty = 9;
 
             backgroundspeed = 4;
@@ -237,7 +237,7 @@ namespace SpaceFlight
 
         private void EnemiesMunition_Tick(object sender, EventArgs e)
         {
-            for (int i = 0; i < enemiesmunition.Length - difficulty; i++)
+            for (int i = 0; i < (enemiesmunition.Length +2 - difficulty); i++)
             {
                 if (enemiesmunition[i].Top < this.Height)
                 {
@@ -342,8 +342,12 @@ namespace SpaceFlight
         private void btnReplay_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
+            Form1_Load(sender, e);
             InitializeComponent();
-            Form1_Load(e, e);
+            LeftMove.Enabled = false;
+            RightMove.Enabled = false;
+            UpMove.Enabled = false;
+            DownMove.Enabled = false;
         }
 
         private void btnExit_Click(object sender, EventArgs e)

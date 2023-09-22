@@ -31,7 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.MoveBgTimer = new System.Windows.Forms.Timer(this.components);
-            this.Player = new System.Windows.Forms.PictureBox();           
+            this.Player = new System.Windows.Forms.PictureBox();
+            this.LeftMove = new System.Windows.Forms.Timer(this.components);
+            this.RightMove = new System.Windows.Forms.Timer(this.components);
+            this.UpMove = new System.Windows.Forms.Timer(this.components);
+            this.DownMove = new System.Windows.Forms.Timer(this.components);
             this.MunitionMove = new System.Windows.Forms.Timer(this.components);
             this.MoveEnemies = new System.Windows.Forms.Timer(this.components);
             this.EnemiesMunition = new System.Windows.Forms.Timer(this.components);
@@ -42,10 +46,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.levellbl = new System.Windows.Forms.Label();
-            this.LeftMove = new System.Windows.Forms.Timer(this.components);
-            this.RightMove = new System.Windows.Forms.Timer(this.components);
-            this.UpMove = new System.Windows.Forms.Timer(this.components);
-            this.DownMove = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Player)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,6 +111,7 @@
             // txtLv
             // 
             this.txtLv.AutoSize = true;
+            this.txtLv.BackColor = System.Drawing.Color.Transparent;
             this.txtLv.Font = new System.Drawing.Font("Modern No. 20", 47.99999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLv.ForeColor = System.Drawing.Color.White;
             this.txtLv.Location = new System.Drawing.Point(145, 120);
@@ -122,42 +123,46 @@
             // 
             // btnReplay
             // 
+            this.btnReplay.BackColor = System.Drawing.Color.Transparent;
             this.btnReplay.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReplay.Location = new System.Drawing.Point(160, 200);
             this.btnReplay.Name = "btnReplay";
             this.btnReplay.Size = new System.Drawing.Size(255, 55);
             this.btnReplay.TabIndex = 2;
             this.btnReplay.Text = "Replay";
-            this.btnReplay.UseVisualStyleBackColor = true;
+            this.btnReplay.UseVisualStyleBackColor = false;
             this.btnReplay.Visible = false;
             this.btnReplay.Click += new System.EventHandler(this.btnReplay_Click);
             // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(160, 270);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(255, 55);
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Visible = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // scorelbl
             // 
             this.scorelbl.AutoSize = true;
+            this.scorelbl.BackColor = System.Drawing.Color.Transparent;
             this.scorelbl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scorelbl.ForeColor = System.Drawing.Color.Yellow;
             this.scorelbl.Location = new System.Drawing.Point(94, 13);
             this.scorelbl.Name = "scorelbl";
-            this.scorelbl.Size = new System.Drawing.Size(19, 21);
+            this.scorelbl.Size = new System.Drawing.Size(28, 21);
             this.scorelbl.TabIndex = 3;
-            this.scorelbl.Text = "0";
+            this.scorelbl.Text = "00";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Yellow;
             this.label1.Location = new System.Drawing.Point(13, 13);
@@ -169,6 +174,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Yellow;
             this.label2.Location = new System.Drawing.Point(491, 9);
@@ -180,6 +186,7 @@
             // levellbl
             // 
             this.levellbl.AutoSize = true;
+            this.levellbl.BackColor = System.Drawing.Color.Transparent;
             this.levellbl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.levellbl.ForeColor = System.Drawing.Color.Yellow;
             this.levellbl.Location = new System.Drawing.Point(553, 9);
