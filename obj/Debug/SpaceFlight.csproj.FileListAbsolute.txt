@@ -1,0 +1,12 @@
+C:\Users\admin\Documents\KHJ_Hitech\C#\SpaceFlight\bin\Debug\SpaceFlight.exe.config
+C:\Users\admin\Documents\KHJ_Hitech\C#\SpaceFlight\bin\Debug\SpaceFlight.exe
+C:\Users\admin\Documents\KHJ_Hitech\C#\SpaceFlight\bin\Debug\SpaceFlight.pdb
+C:\Users\admin\Documents\KHJ_Hitech\C#\SpaceFlight\obj\Debug\SpaceFlight.csproj.AssemblyReference.cache
+C:\Users\admin\Documents\KHJ_Hitech\C#\SpaceFlight\obj\Debug\SpaceFlight.Form1.resources
+C:\Users\admin\Documents\KHJ_Hitech\C#\SpaceFlight\obj\Debug\SpaceFlight.Properties.Resources.resources
+C:\Users\admin\Documents\KHJ_Hitech\C#\SpaceFlight\obj\Debug\SpaceFlight.csproj.GenerateResource.cache
+C:\Users\admin\Documents\KHJ_Hitech\C#\SpaceFlight\obj\Debug\SpaceFlight.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\KHJ_Hitech\C#\SpaceFlight\obj\Debug\SpaceFlight.exe
+C:\Users\admin\Documents\KHJ_Hitech\C#\SpaceFlight\obj\Debug\SpaceFlight.pdb
+C:\Users\admin\Documents\KHJ_Hitech\C#\SpaceFlight\obj\Debug\Interop.WMPLib.dll
+C:\Users\admin\Documents\KHJ_Hitech\C#\SpaceFlight\obj\Debug\SpaceFlight.csproj.ResolveComReference.cache
