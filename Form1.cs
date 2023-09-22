@@ -257,6 +257,10 @@ namespace SpaceFlight
 
         private void GameOver(string str)
         {
+            LeftMove.Stop();
+            RightMove.Stop();
+            UpMove.Stop();
+            DownMove.Stop();
             txtLv.Text = str;
             txtLv.Location = new Point(145, 120);
             txtLv.Visible = true;
@@ -333,7 +337,7 @@ namespace SpaceFlight
                     enemiesmunition[i].Visible = false;
                     explosion.settings.volume = 6;
                     explosion.controls.play();
-                    Player.Visible = false;
+                    Player.Visible = false;   
                     GameOver("GameOver");
                 }
             }
@@ -342,12 +346,8 @@ namespace SpaceFlight
         private void btnReplay_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
-            Form1_Load(sender, e);
             InitializeComponent();
-            LeftMove.Enabled = false;
-            RightMove.Enabled = false;
-            UpMove.Enabled = false;
-            DownMove.Enabled = false;
+            Form1_Load(sender, e);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
